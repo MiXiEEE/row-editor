@@ -1,38 +1,101 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content-table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  min-width: 1277px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content-table thead tr {
+  background-color: #343434;
+  color: #fff;
+  text-align: left;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+.content-table tbody tr:last-of-type {
+  border-bottom: 3px solid #343434;
+}
+
+.userform {
+  width: 20%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.userform h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.userform input[type="text"],
+input[type="email"] {
+  font-size: 1.1em;
+  margin-top: 5px;
+  outline: none;
+  border-style: none;
+  border-bottom: 1px solid #343434;
+  width: 98%;
+  height: 25px;
+}
+
+.userform input[type="text"]:focus {
+  border-bottom: 1px solid #00ff00;
+}
+.userform input[type="email"]:focus {
+  border-bottom: 1px solid #00ff00;
+}
+
+.userform label {
+  margin-top: 10px;
+  display: block;
+  text-align: left;
+}
+
+.userform button {
+  margin-top: 15px;
+  width: 100%;
+  height: 25px;
+  background-color: #00ff00;
+  border-style: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.row-btn {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
